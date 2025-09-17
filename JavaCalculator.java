@@ -1,3 +1,12 @@
+
+/******************************************************
+ * JavaCalculator.java
+ * Author: Joe Goode
+ *
+ * This program lets the user choose a math operation,
+ * then performs the calculation and shows the result.
+ ******************************************************/
+
 import java.util.Scanner;
 
 public class JavaCalculator {
