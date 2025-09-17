@@ -32,6 +32,17 @@ public class JavaCalculator {
                 int multiTotal = multi1 * multi2;
                 System.out.println("The result is: " + multiTotal);
                 break;
+
+            case "pow":
+                System.out.print("Enter the base number: ");
+                int base = scnr.nextInt();
+
+                System.out.print("Enter the exponent you want to raise it to: ");
+                int exponent = scnr.nextInt();
+
+                double powTotal = Math.pow(base, exponent);
+                System.out.println("The result is: " + powTotal);
+                break;
         }
     }
 }
