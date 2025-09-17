@@ -10,7 +10,7 @@ public class JavaCalculator {
 
         while (anotherOne) {
 
-            System.out.print("Which operation would you like to perform? (+, -, *. pow, sqrt): ");
+            System.out.print("Which operation would you like to perform? (+, -, *, pow, sqrt): ");
             String operatorType = scnr.nextLine();
 
             switch (operatorType) {
@@ -19,13 +19,14 @@ public class JavaCalculator {
                     int add1 = scnr.nextInt();
                     int add2 = scnr.nextInt();
                     int addTotal = add1 + add2;
-                    System.out.println("The result is: " + addTotal);
+                    String totalToString = Integer.toString(addTotal);
+                    System.out.println("The result is: " + totalToString);
                     break;
 
                 case "-":
                     System.out.print("Enter the two numbers you'd like subtracted: ");
-                    int sub1 = scnr.nextInt();
-                    int sub2 = scnr.nextInt();
+                    int sub1 = Integer.parseInt(scnr.nextLine());
+                    int sub2 = Integer.parseInt(scnr.nextLine());
                     int subTotal = sub1 - sub2;
                     System.out.println("The result is: " + subTotal);
                     break;
@@ -66,10 +67,12 @@ public class JavaCalculator {
             scnr.nextLine();
             String again = scnr.nextLine();
 
-            if ((!again.equalsIgnoreCase("yes")) && (!again.equalsIgnoreCase("y"))) {
+            if (!again.equalsIgnoreCase("yes")) {
                 anotherOne = false;
                 System.out.println("Thanks for using the Java Calculator!");
             }
         }
+
+        scnr.close();
     }
 }
