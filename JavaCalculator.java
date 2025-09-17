@@ -66,7 +66,7 @@ public class JavaCalculator {
             scnr.nextLine();
             String again = scnr.nextLine();
 
-            if (!again.equalsIgnoreCase("yes")) {
+            if ((!again.equalsIgnoreCase("yes")) && (!again.equalsIgnoreCase("y"))) {
                 anotherOne = false;
                 System.out.println("Thanks for using the Java Calculator!");
             }
