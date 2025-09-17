@@ -43,6 +43,18 @@ public class JavaCalculator {
                 double powTotal = Math.pow(base, exponent);
                 System.out.println("The result is: " + powTotal);
                 break;
+
+            case "sqrt":
+                System.out.print("Enter the number you want the square root of: ");
+                int sqrtNum = scnr.nextInt();
+
+                double sqrtTotal = Math.sqrt(sqrtNum);
+                System.out.println("The result is: " + sqrtTotal);
+                break;
+
+            default:
+                System.out.println("Invalid option, please enter a valid operator.");
+                break;
         }
     }
 }
