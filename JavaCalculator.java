@@ -5,12 +5,12 @@ public class JavaCalculator {
         Scanner scnr = new Scanner(System.in);
 
         System.out.println("Welcome to the Java Calculator Program.");
-        System.out.println("Which operation would you like to perform? (+, -, *. pow, sqrt)");
+        System.out.print("Which operation would you like to perform? (+, -, *. pow, sqrt): ");
         String operatorType = scnr.nextLine();
 
         switch (operatorType) {
             case "+":
-                System.out.print("Enter the two numbers you'd like added:");
+                System.out.print("Enter the two numbers you'd like added: ");
                 int add1 = scnr.nextInt();
                 int add2 = scnr.nextInt();
                 int addTotal = add1 + add2;
@@ -18,11 +18,19 @@ public class JavaCalculator {
                 break;
 
             case "-":
-                System.out.print("Enter the two numbers you'd like subtracted:");
+                System.out.print("Enter the two numbers you'd like subtracted: ");
                 int sub1 = scnr.nextInt();
                 int sub2 = scnr.nextInt();
                 int subTotal = sub1 - sub2;
                 System.out.println("The result is: " + subTotal);
+                break;
+
+            case "*":
+                System.out.print("Enter the two numbers you'd like multiplied: ");
+                int multi1 = scnr.nextInt();
+                int multi2 = scnr.nextInt();
+                int multiTotal = multi1 * multi2;
+                System.out.println("The result is: " + multiTotal);
                 break;
         }
     }
