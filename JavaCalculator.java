@@ -5,12 +5,13 @@ public class JavaCalculator {
         Scanner scnr = new Scanner(System.in);
 
         System.out.println("Welcome to the Java Calculator Program.");
-        System.out.print("Which operation would you like to perform? (+, -, *. pow, sqrt): ");
-        String operatorType = scnr.nextLine();
 
         boolean anotherOne = true;
 
         while (anotherOne) {
+
+            System.out.print("Which operation would you like to perform? (+, -, *. pow, sqrt): ");
+            String operatorType = scnr.nextLine();
 
             switch (operatorType) {
                 case "+":
