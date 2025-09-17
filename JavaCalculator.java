@@ -60,6 +60,15 @@ public class JavaCalculator {
                     System.out.println("Invalid option, please enter a valid operator.");
                     break;
             }
+
+            System.out.print("Would you like to do another calculation? (yes/no): ");
+            scnr.nextLine();
+            String again = scnr.nextLine();
+
+            if (!again.equalsIgnoreCase("yes")) {
+                anotherOne = false;
+                System.out.println("Thanks for using the Java Calculator!");
+            }
         }
     }
 }
