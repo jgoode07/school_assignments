@@ -8,17 +8,23 @@ public class PopulationGrowth {
 
         System.out.print("Please enter the starting number of organisms (2 or more): ");
         double startingNum = scnr.nextDouble();
-
-        System.out.print("What is the daily increase of population in percentage (positive only): ");
-        int dailyGrowth = scnr.nextInt();
-
-        System.out.print("How many days will the population multiply for? ");
-        int numOfDays = scnr.nextInt();
-
-        if (startingNum < 2 || dailyGrowth < 0 || numOfDays < 1) {
-            System.out.println("Invalid input. Please follow the instructions properly.");
+        if (startingNum < 2) {
+            System.out.println("Invalid input. Starting number must be 2 or more.");
             return;
         }
 
+        System.out.print("What is the daily increase of population in percentage (positive only): ");
+        int dailyGrowth = scnr.nextInt();
+        if (dailyGrowth < 0) {
+            System.out.println("Invalid input. Daily increase must be 0 or more.");
+            return;
+        }
+
+        System.out.print("How many days will the population multiply for? ");
+        int numOfDays = scnr.nextInt();
+        if (numOfDays < 1) {
+            System.out.println("Invalid input. Number of days must be 1 or more.");
+            return;
+        }
     }
 }
