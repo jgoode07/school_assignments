@@ -1,3 +1,4 @@
+package JavaCalculator;
 
 /******************************************************
  * JavaCalculator.java

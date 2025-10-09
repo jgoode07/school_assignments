@@ -1,3 +1,5 @@
+package PopulationGrowth;
+
 import java.util.Scanner;
 
 public class PopulationGrowth {
