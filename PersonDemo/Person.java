@@ -20,4 +20,11 @@ public class Person {
         this.email = email;
     }
 
+    // A method to display the person's info
+    public void DisplayInfo() {
+        // Display the info on the console
+        System.out.println("Name: " + name);
+        System.out.println("Age: " + age);
+        System.out.println("Email: " + email);
+    }
 }
