@@ -8,5 +8,8 @@
 package PersonDemo;
 
 public class PersonDemo {
-
+    public static void main(String[] args) {
+        Person person1 = new Person("Joe Goode", 39, "jgoode@sample.com");
+        Person person2 = new Person("Sampson Superpup", 11, "sampsonitis@sample.com");
+    }
 }
