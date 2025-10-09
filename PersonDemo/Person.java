@@ -21,7 +21,7 @@ public class Person {
     }
 
     // A method to display the person's info
-    public void DisplayInfo() {
+    public void displayInfo() {
         // Display the info on the console
         System.out.println("Name: " + name);
         System.out.println("Age: " + age);
