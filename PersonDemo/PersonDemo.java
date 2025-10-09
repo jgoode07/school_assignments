@@ -15,8 +15,10 @@ public class PersonDemo {
         // Display the people's info
         System.out.println("Person 1: ");
         person1.displayInfo();
+        System.out.println(); // Add some space between people
 
         System.out.println("Person 2: ");
         person2.displayInfo();
+        System.out.println();
     }
 }
