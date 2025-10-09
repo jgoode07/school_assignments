@@ -20,5 +20,10 @@ public class PersonDemo {
         System.out.println("Person 2: ");
         person2.displayInfo();
         System.out.println();
+
+        // Trying to access the local variable 'address' here...doesn't work
+        // System.out.println(person1.address); // This line causes an error
+        // I learned that local variables only exist inside the method they're written
+        // in.
     }
 }

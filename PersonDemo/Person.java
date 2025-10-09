@@ -22,6 +22,9 @@ public class Person {
 
     // A method to display the person's info
     public void displayInfo() {
+        // Local variable for this method only
+        String address = "123 Main St"; // Just for testing purposes
+
         // Display the info on the console
         System.out.println("Name: " + name);
         System.out.println("Age: " + age);
