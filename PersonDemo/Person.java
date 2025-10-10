@@ -30,4 +30,10 @@ public class Person {
         System.out.println("Age: " + age);
         System.out.println("Email: " + email);
     }
+
+    // Method to calculate the person's birth year
+    public int calculateBirthYear(int currentYear) {
+        // Returns the result of the current year minus the age of the person
+        return currentYear - age;
+    }
 }
