@@ -25,5 +25,13 @@ public class PersonDemo {
         // System.out.println(person1.address); // This line causes an error
         // I learned that local variables only exist inside the method they're written
         // in.
+
+        // Calculation to display the person's birth year
+        int birthYear1 = person1.calculateBirthYear(2025);
+        int birthYear2 = person2.calculateBirthYear(2025);
+
+        System.out.println("Person 1's Birth Year: " + birthYear1);
+        System.out.println("Person 2's Birth Year: " + birthYear2);
+        System.out.println();
     }
 }
