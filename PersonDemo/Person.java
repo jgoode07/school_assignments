@@ -36,4 +36,10 @@ public class Person {
         // Returns the result of the current year minus the age of the person
         return currentYear - age;
     }
+
+    // Method to check if the person is an adult
+    public boolean isAdult() {
+        // Returns true if 18 or older
+        return age >= 18;
+    }
 }
