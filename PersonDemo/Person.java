@@ -33,7 +33,11 @@ public class Person {
 
     // Method to calculate the person's birth year
     public int calculateBirthYear(int currentYear) {
-        // Returns the result of the current year minus the age of the person
+        /*
+         * The return statement sends the result back to the place where
+         * this method was called. In this case, it returns the birth year
+         * (currentYear - age) to the main
+         */
         return currentYear - age;
     }
 

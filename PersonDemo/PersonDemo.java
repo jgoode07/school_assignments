@@ -9,8 +9,10 @@ package PersonDemo;
 
 public class PersonDemo {
     public static void main(String[] args) {
-        Person person1 = new Person("Joe Goode", 39, "jgoode@sample.com");
-        Person person2 = new Person("Sampson Superpup", 11, "sampsonitis@sample.com");
+        Person person1 = new Person("Joe Goode", 39,
+                "jgoode@sample.com");
+        Person person2 = new Person("Sampson Superpup", 11,
+                "sampsonitis@sample.com");
 
         // Display the people's info
         System.out.println("Person 1: ");
@@ -21,12 +23,15 @@ public class PersonDemo {
         person2.displayInfo();
         System.out.println();
 
-        // Trying to access the local variable 'address' here...doesn't work
-        // System.out.println(person1.address); // This line causes an error
-        // I learned that local variables only exist inside the method they're
-        // written in.
+        /*
+         * Trying to access the local variable 'address' here...doesn't work
+         * System.out.println(person1.address); -- This line causes an error
+         * I learned that local variables only exist inside the method they're
+         * written in
+         */
 
-        // Calculation to display the person's birth year
+        // The calculateBirthYear() method returns a value, so I have to store
+        // it in a variable before printing it.
         int birthYear1 = person1.calculateBirthYear(2025);
         int birthYear2 = person2.calculateBirthYear(2025);
 
