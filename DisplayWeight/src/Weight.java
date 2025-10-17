@@ -30,6 +30,6 @@ public class Weight {
     }
 
     public void print() {
-        System.out.println("Weight: " + weight + units);
+        System.out.println("Weight: " + weight + " " + units);
     }
 }
