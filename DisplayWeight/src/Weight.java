@@ -13,8 +13,19 @@ public class Weight {
         setWeight(w);
     }
 
+    // Two param constructor
+    public Weight(double w, String u) {
+        setWeight(w, u);
+    }
+
+    // Setters
     public void setWeight(double w) {
         weight = w;
         units = "kg";
+    }
+
+    public void setWeight(double w, String u) {
+        weight = w;
+        units = u;
     }
 }
