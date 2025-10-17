@@ -38,8 +38,8 @@ public class Weight {
         units = u;
     }
 
-    // Print method
+    // Print method with printf to format value without decimal
     public void print() {
-        System.out.println("Weight: " + weight + " " + units);
+        System.out.printf("%.0f %s%n", weight, units);
     }
 }
