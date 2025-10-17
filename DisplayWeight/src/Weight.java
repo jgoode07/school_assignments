@@ -1,3 +1,12 @@
+/************************************
+ * Weight.java
+ * Author: Joe Goode
+ * 
+ * Creates a simple Weight class with
+ * constructors and methods to set
+ * and display weight.
+ ************************************/
+
 public class Weight {
     private double weight;
     private String units;
@@ -29,6 +38,7 @@ public class Weight {
         units = u;
     }
 
+    // Print method
     public void print() {
         System.out.println("Weight: " + weight + " " + units);
     }
