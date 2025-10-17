@@ -28,4 +28,8 @@ public class Weight {
         weight = w;
         units = u;
     }
+
+    public void print() {
+        System.out.println("Weight: " + weight + units);
+    }
 }
