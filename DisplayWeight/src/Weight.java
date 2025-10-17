@@ -33,9 +33,17 @@ public class Weight {
         units = "kg";
     }
 
+    // Added a simple check so only "kg" or "lbs" are accepted,
+    // otherwise it defaults to "kg"
     public void setWeight(double w, String u) {
-        weight = w;
-        units = u;
+        if (u.equals("kg") || u.equals("lbs")) {
+            weight = w;
+            units = u;
+        } else {
+            System.out.println("Invalid unit, defaulting to kg.");
+            weight = w;
+            units = "kg";
+        }
     }
 
     // Print method with printf to format value without decimal
