@@ -12,7 +12,7 @@ The program will create a `Weight` class and a `WeightDriver` class to show the 
 
 ## UML Classes
 
-![UML](screenshot/uml_weight.PNG)
+![UML](./screenshot/uml_weight.PNG)
 
 ## What I'm Practicing
 
