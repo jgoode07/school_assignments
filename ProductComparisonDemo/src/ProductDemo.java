@@ -4,7 +4,7 @@ public class ProductDemo {
         Product product2 = new Product("Laptop", 999.99, 12345);
 
         // Check for equality with equals()
-        System.out.println("Both products are equal: " + product1.equals(product2)); // Prints "false"
+        System.out.println("Product 1 and 2 are equal: " + product1.equals(product2)); // Prints "false"
 
         Product product3 = new Product("Tablet", 499.99, 12346);
 
@@ -14,6 +14,12 @@ public class ProductDemo {
 
         System.out.println("\nProduct 3 Info:");
         product3.printProductInfo(true); // Prints Name, Price and Code
+
+        // Fourth product
+        Product product = new Product("Monitor", 199.99, 23456);
+
+        // Show how many objects are created
+        System.out.println("Total Product Count: " + Product.getProductCount());
     }
 
 }
