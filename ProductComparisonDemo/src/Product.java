@@ -1,3 +1,13 @@
+/******************************************************
+ * Product.java
+ * Author: Joe Goode
+ *
+ * This class creates a product with a name, price,
+ * and product code. It includes overloaded methods to
+ * print product details and tracks how many products
+ * have been created using a static variable.
+ *****************************************************/
+
 public class Product {
     private String name;
     private double price;
