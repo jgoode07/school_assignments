@@ -1,4 +1,4 @@
-# Product Comparison Program
+# Product Demo Program
 
 **Author:** Joe Goode  
 **Course:** Object-Oriented Programming  
@@ -36,7 +36,7 @@ Name: Laptop
 Price: $999.99
 Product Code: 12345
 
-Product 1 and Product 2 are equal: true
+Product 1 and Product 2 are equal: false
 
 Product 3 Information:
 Name: Tablet
