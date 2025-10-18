@@ -8,4 +8,9 @@ public class Product {
         this.price = price;
         this.productCode = productCode;
     }
+
+    public void printProductInfo() {
+        System.out.println("Name: " + name);
+        System.out.println("Price: $" + price);
+    }
 }
