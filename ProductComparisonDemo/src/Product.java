@@ -3,6 +3,7 @@ public class Product {
     private double price;
     private int productCode;
     private static int productCount = 0;
+    public static final double TAX_RATE = 0.1; // 10% tax
 
     public Product(String name, double price, int productCode) {
         this.name = name;
@@ -13,6 +14,11 @@ public class Product {
 
     public static int getProductCount() {
         return productCount;
+    }
+
+    // Getter method to access price in other classes
+    public double getPrice() {
+        return price;
     }
 
     public void printProductInfo() {

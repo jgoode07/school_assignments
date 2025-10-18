@@ -20,6 +20,10 @@ public class ProductDemo {
 
         // Show how many objects are created
         System.out.println("Total Product Count: " + Product.getProductCount());
+
+        // Tax calculation using final constant from Product class
+        double taxAmount = product1.getPrice() * Product.TAX_RATE;
+        System.out.println("Tax Amount for Product 1: $" + taxAmount);
     }
 
 }
