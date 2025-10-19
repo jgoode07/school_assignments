@@ -15,6 +15,15 @@ public class Person {
 
     // Create a constructor
     public Person(String name, int age, String email) {
+        if (name == null || name.trim().isEmpty()) {
+            throw new IllegalArgumentException("Name must not be null or empty");
+        }
+        if (age < 0) {
+            throw new IllegalArgumentException("Age must be non-negative");
+        }
+        if (email == null || email.trim().isEmpty()) {
+            throw new IllegalArgumentException("Email must not be null or empty");
+        }
         this.name = name;
         this.age = age;
         this.email = email;
