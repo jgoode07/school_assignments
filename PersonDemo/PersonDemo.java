@@ -7,6 +7,8 @@
 
 package PersonDemo;
 
+import java.time.Year;
+
 public class PersonDemo {
     public static void main(String[] args) {
         Person person1 = new Person("Joe Goode", 39,
@@ -32,8 +34,9 @@ public class PersonDemo {
 
         // The calculateBirthYear() method returns a value, so I have to store
         // it in a variable before printing it.
-        int birthYear1 = person1.calculateBirthYear(2025);
-        int birthYear2 = person2.calculateBirthYear(2025);
+        int currentYear = Year.now().getValue();
+        int birthYear1 = person1.calculateBirthYear(currentYear);
+        int birthYear2 = person2.calculateBirthYear(currentYear);
 
         System.out.println("Person 1's Birth Year: " + birthYear1);
         System.out.println("Person 2's Birth Year: " + birthYear2);
