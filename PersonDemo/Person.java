@@ -20,6 +20,19 @@ public class Person {
         this.email = email;
     }
 
+    // Getter methods for encapsulation
+    public String getName() {
+        return name;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
     // A method to display the person's info
     public void displayInfo() {
         // Local variable for this method only (for testing purposes)
