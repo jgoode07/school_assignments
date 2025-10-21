@@ -10,6 +10,7 @@ public class Cousins {
         String[][] cousins = { bradKids, jayKids, annKids, libbyKids };
 
         // <insert code here>
+        System.out.println("Cousins:\n");
 
     } // end Main
 
