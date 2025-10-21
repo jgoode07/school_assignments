@@ -12,6 +12,7 @@ public class Cousins {
         // <insert code here>
         System.out.println("Cousins:\n");
 
-    } // end Main
-
-} // end class Cousins
+        // Loop through the outer loop (families)
+        for (int i = 0; i < cousins.length; i++) {
+        }   
+    }
