@@ -1,4 +1,12 @@
-import java.util.Arrays;
+
+/**********************************************************
+ * Cousins.java
+ * Author: Joe Goode
+ *
+ * This program stores groups of cousins in a 2D array
+ * and prints each family on its own line using a for-each
+ * loop.
+ **********************************************************/
 
 public class Cousins {
 
