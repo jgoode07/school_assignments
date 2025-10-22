@@ -14,9 +14,9 @@ public class Cousins {
 
         // Loop through the outer loop (families)
         for (int i = 0; i < cousins.length; i++) {
-            // Inner loop, for each kid
-            for (int j = 0; j < cousins[i].length; j++) {
-                System.out.print(cousins[i][j] + " ");
+            // Inner for each loop
+            for (String kid : cousins[i]) {
+                System.out.print(kid + " ");
             }
         }
     } // end Main
