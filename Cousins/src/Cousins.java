@@ -14,10 +14,14 @@ public class Cousins {
 
         // Loop through the outer loop (families)
         for (int i = 0; i < cousins.length; i++) {
+            if (cousins[i].length == 0) {
+                continue; // Skip empty arrays
+            }
             // Inner for each loop
             for (String kid : cousins[i]) {
                 System.out.print(kid + " ");
             }
+            System.out.println(); // new line after each row
         }
     } // end Main
 } // end class Cousins
