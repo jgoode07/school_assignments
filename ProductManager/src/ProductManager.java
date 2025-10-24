@@ -1,9 +1,20 @@
 public class ProductManager {
     public static void main(String[] args) {
         Product[] inventory = new Product[] {
-            new Product("Laptop", 1001, new double[]{899.99, 949.99, 999.99, 899.99, 949.99, 999.99, 849.99, 899.99, 949.99, 999.99}),
-            new Product("Phone", 1002, new double[]{599.99, 649.99, 699.99, 749.99, 699.99, 749.99, 799.99, 849.99, 799.99, 849.99}),
-            new Product(Tablet, 1003, new double[]{299.99, 349.99, 399.99, 299.99, 349.99, 399.99}),
-        }   
+                new Product("Laptop", 1001,
+                        new double[] { 899.99, 949.99, 999.99, 899.99, 949.99, 999.99, 849.99, 899.99, 949.99,
+                                999.99 }),
+                new Product("Phone", 1002,
+                        new double[] { 599.99, 649.99, 699.99, 749.99, 699.99, 749.99, 799.99, 849.99, 799.99,
+                                849.99 }),
+                new Product("Tablet", 1003, new double[] { 299.99, 349.99, 399.99, 299.99, 349.99, 399.99 }),
+                new Product("Monitor", 1004, new double[] { 199.99, 179.99, 189.99, 209.99 }),
+                new Product("Keyboard", 1005, new double[] { 49.99, 39.99, 44.99, 49.99 }),
+                new Product("Mouse", 1006, new double[] { 24.99, 19.99, 29.99, 24.99 }),
+                new Product("Headset", 1007, new double[] { 89.99, 79.99, 99.99, 89.99 }),
+                new Product("Charger", 1008, new double[] { 19.99, 14.99, 17.99 }),
+                new Product("SSD", 1009, new double[] { 129.99, 119.99, 139.99 }),
+                new Product("Webcam", 1010, new double[] { 69.99, 59.99, 64.99 })
+        };
     }
 }
