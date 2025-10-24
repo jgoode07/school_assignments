@@ -16,5 +16,11 @@ public class ProductManager {
                 new Product("SSD", 1009, new double[] { 129.99, 119.99, 139.99 }),
                 new Product("Webcam", 1010, new double[] { 69.99, 59.99, 64.99 })
         };
+        // For each loop prints each item in the array
+        System.out.println("Products:");
+        for (Product p : inventory) {
+            System.out.println();
+            System.out.println(p);
+        }
     }
 }
