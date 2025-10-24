@@ -72,6 +72,10 @@ public class ProductManager {
             System.out.print(sale + " ");
         }
         System.out.println();
+
+        // Print average sales for the month called
+        double avgMonth2 = findAverageSales(month2);
+        System.out.printf("%nAverage Sales for Month 2: %.2f%n", avgMonth2);
     }
 
     // Part 3: helper method to calculate average sales of the month
