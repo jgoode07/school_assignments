@@ -40,5 +40,10 @@ public class ProductManager {
             System.out.print(sale + " ");
         }
         System.out.println(); // New line for cleaner output
+
+        // PART 2: Monthly Sales (3 arrays of 4 weeks)
+        int[] month1 = new int[4];
+        int[] month2 = new int[4];
+        int[] month3 = new int[4];
     }
 }
