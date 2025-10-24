@@ -52,5 +52,25 @@ public class ProductManager {
             month2[i] = weeklySales[i + 4]; // Weeks 4-7
             month3[i] = weeklySales[i + 8]; // Weeks 8-11
         }
+
+        // Display monthly sales using for-each loops
+        System.out.println("\nMONTHLY SALES:");
+        System.out.print("Month 1: ");
+        for (int sale : month1) {
+            System.out.print(sale + " ");
+        }
+        System.out.println();
+
+        System.out.print("Month 2: ");
+        for (int sale : month2) {
+            System.out.print(sale + " ");
+        }
+        System.out.println();
+
+        System.out.print("Month 3: ");
+        for (int sale : month3) {
+            System.out.print(sale + " ");
+        }
+        System.out.println();
     }
 }
