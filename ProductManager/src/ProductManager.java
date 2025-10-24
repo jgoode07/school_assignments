@@ -73,4 +73,13 @@ public class ProductManager {
         }
         System.out.println();
     }
+
+    // Part 3: helper method to calculate average sales of the month
+    public static double findAverageSales(int[] sales) {
+        int total = 0;
+        for (int num : sales) {
+            total += num;
+        }
+        return (double) total / sales.length;
+    }
 }
