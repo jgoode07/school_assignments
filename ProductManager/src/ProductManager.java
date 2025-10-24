@@ -45,5 +45,12 @@ public class ProductManager {
         int[] month1 = new int[4];
         int[] month2 = new int[4];
         int[] month3 = new int[4];
+
+        // Copy weeks into each month
+        for (int i = 0; i < 4; i++) {
+            month1[i] = weeklySales[i]; // Weeks 0-3
+            month2[i] = weeklySales[i + 4]; // Weeks 4-7
+            month3[i] = weeklySales[i + 8]; // Weeks 8-11
+        }
     }
 }
