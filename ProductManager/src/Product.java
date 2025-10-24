@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class Product {
     private String productName;
     private int productId;
@@ -20,5 +22,12 @@ public class Product {
 
     public double[] getPrices() {
         return prices;
+    }
+
+    @Override
+    public String toString() {
+        return "Product Name: " + productName + "\n"
+                + "Product ID: " + productId + "\n"
+                + "Prices: " + Arrays.toString(prices);
     }
 }
