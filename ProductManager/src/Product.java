@@ -8,4 +8,17 @@ public class Product {
         this.productId = productId;
         this.prices = prices;
     }
+
+    // Getters
+    public String getProductName() {
+        return productName;
+    }
+
+    public int productId() {
+        return productId;
+    }
+
+    public double getPrices() {
+        return prices;
+    }
 }
