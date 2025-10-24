@@ -33,5 +33,12 @@ public class ProductManager {
         for (int i = 0; i < weeklySales.length; i++) {
             weeklySales[i] = 50 + range.nextInt(151);
         }
+
+        // Display weeklySales with a for-each loop
+        System.out.println("\nWeekly Sales:");
+        for (int sale : weeklySales) {
+            System.out.print(sale + " ");
+        }
+        System.out.println(); // New line for cleaner output
     }
 }
