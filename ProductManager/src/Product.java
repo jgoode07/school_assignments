@@ -18,7 +18,7 @@ public class Product {
         return productId;
     }
 
-    public double getPrices() {
+    public double[] getPrices() {
         return prices;
     }
 }
