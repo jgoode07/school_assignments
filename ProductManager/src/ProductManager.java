@@ -1,3 +1,5 @@
+import java.util.Random;
+
 public class ProductManager {
     public static void main(String[] args) {
         Product[] inventory = new Product[] {
@@ -21,6 +23,15 @@ public class ProductManager {
         for (Product p : inventory) {
             System.out.println();
             System.out.println(p);
+        }
+
+        // Weekly sales (capacity 40)
+        int[] weeklySales = new int[40];
+        Random range = new Random();
+
+        // Fill weekly sales with random values between 50 and 200
+        for (int i = 0; i < weeklySales.length; i++) {
+            weeklySales[i] = 50 + range.nextInt(151);
         }
     }
 }
