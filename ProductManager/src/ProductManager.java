@@ -1,3 +1,4 @@
+import java.util.Arrays;
 import java.util.Random;
 
 public class ProductManager {
@@ -76,6 +77,12 @@ public class ProductManager {
         // Print average sales for the month called
         double avgMonth2 = findAverageSales(month2);
         System.out.printf("%nAverage Sales for Month 2: %.2f%n", avgMonth2);
+
+        // Part 3b: Sort and display prices for the first product
+        sortPrices(inventory[0].getPrices());
+        System.out.println("\nSorted Prices:");
+        System.out.println(Arrays.toString(inventory[0].getPrices()));
+
     }
 
     // Part 3: helper method to calculate average sales of the month
@@ -85,5 +92,24 @@ public class ProductManager {
             total += num;
         }
         return (double) total / sales.length;
+    }
+
+    // Sorts the given price array
+    public static void sortPrices(double[] prices) {
+
+        // Move the smallest value to the right spot each loop
+        for (int i = 0; i < prices.length - 1; i++) {
+            int smallestIndex = i;
+
+            // Find the smallest value in the rest of the array
+            for (int j = i + 1; j < prices.length; j++) {
+                if (prices[j] < prices[smallestIndex]) {
+                    smallestIndex = j;
+                }
+            }
+            double temp = prices[i];
+            prices[i] = prices[smallestIndex];
+            prices[smallestIndex] = temp;
+        }
     }
 }
