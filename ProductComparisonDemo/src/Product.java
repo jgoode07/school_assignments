@@ -47,4 +47,25 @@ public class Product {
             printProductInfo(); // Calls the first version w/o product code
         }
     }
+
+    // Overrides the default equals() to compare Product objects by their values
+    @Override
+    public boolean equals(Object obj) {
+
+        // Check if the two references point to the same object
+        if (this == obj) {
+            return true;
+        }
+
+        // If the other object is not a Product, they can't be equal
+        if (!(obj instanceof Product)) {
+            return false;
+        }
+
+        // Compare object values
+        Product other = (Product) obj;
+        return this.name.equals(other.name)
+                && this.price == other.price
+                && this.productCode == other.productCode;
+    }
 }

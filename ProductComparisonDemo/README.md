@@ -20,7 +20,7 @@ It includes two Java files:
 - Creating objects from a custom class  
 - Overloaded methods (`printProductInfo`)  
 - Static variables and constants (`productCount`, `TAX_RATE`)  
-- Comparing two objects with `.equals()`  
+- Comparing two objects by overriding .equals() so it compares values instead of memory
 
 ## Example Output
 
@@ -36,7 +36,7 @@ Name: Laptop
 Price: $999.99
 Product Code: 12345
 
-Product 1 and Product 2 are equal: false
+Product 1 and Product 2 are equal: true
 
 Product 3 Information:
 Name: Tablet
