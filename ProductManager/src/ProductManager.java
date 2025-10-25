@@ -83,6 +83,23 @@ public class ProductManager {
         System.out.println("\nSorted Prices:");
         System.out.println(Arrays.toString(inventory[0].getPrices()));
 
+        // Part 4: 5x5 matrix with random values
+        int[][] matrix = new int[5][5];
+
+        for (int i = 0; i < matrix.length; i++) {
+            for (int j = 0; j < matrix[i].length; j++) {
+                matrix[i][j] = range.nextInt(10); // random 0-9
+            }
+        }
+
+        System.out.println("\nTwo-Dimensional Array:");
+        for (int[] row : matrix) {
+            for (int num : row) {
+                System.out.print(num + " ");
+            }
+            System.out.println();
+        }
+
     }
 
     // Part 3: helper method to calculate average sales of the month
