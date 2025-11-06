@@ -13,5 +13,20 @@ public class SavingsAccountDriver {
         System.out.println("Month\tAccount #\tBalance\t\tAccount #\tBalance");
         System.out.println("-----\t---------\t-------\t\t---------\t-------");
 
+        // Loop through months 0 to 12
+        for (int month = 0; month <= 12; month++) {
+
+            if (month == 0) {
+                System.out.println(month + "\t" + saver1.getAccountNumber() + "\t\t" + saver1.getBalance()
+                        + "\t\t" + saver2.getAccountNumber() + "\t\t" + saver2.getBalance());
+            } else {
+                // Add interest only after the first month
+                saver1.addMonthlyInterest();
+                saver2.addMonthlyInterest();
+
+                System.out.println(month + "\t" + saver1.getAccountNumber() + "\t\t" + saver1.getBalance()
+                        + "\t\t" + saver2.getAccountNumber() + "\t\t" + saver2.getBalance());
+            }
+        }
     }
 }
