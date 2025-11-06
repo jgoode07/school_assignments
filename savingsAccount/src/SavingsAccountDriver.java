@@ -30,5 +30,8 @@ public class SavingsAccountDriver {
                         saver2.getAccountNumber(), saver2.getBalance());
             }
         }
+        // Display the total of both balances
+        double totalBalance = saver1.getBalance() + saver2.getBalance();
+        System.out.printf("%nFinal balance of both accounts combined: %.2f%n", totalBalance);
     }
 }
