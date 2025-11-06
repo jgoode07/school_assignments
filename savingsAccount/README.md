@@ -1,37 +1,43 @@
-MODULE 1, ASSIGNMENT 1: Aggregation and Composition - Saving Account Comparison 
+# Savings Account Comparison
 
-Instructions: 
-1.	Write a program that establishes two savings accounts with saver1 having account number 10002 with an initial balance of $2,000, and saver2 having account 10003 with an initial balance of $3,000. 
-2.	Set a common rate of interest at 5% per year. At the end of each month, update the balance by adding one month’s interest to the balance, so that the balance compounds monthly. 
-3.	Print an output that displays the month number and the account number and the balance for each of the two accounts. 
-4.	Use month 0 to display the initial balances, month 1 to display the balances after the first month’s interest, and so on. At the end of the year, display the total balance for both accounts combined, like this:
- 
-Output:
- Monthly balances for one year with 0.05 annual interest:
- 
-Month Account #   Balance Account #   Balance
------ ---------   ------- ---------   -------
-0     10002   2000.00 	10003   3000.00
-1     10002   2008.33 	10003   3012.50
-2     10002   2016.70 	10003   3025.05
-3     10002   2025.10 	10003   3037.66
-4     10002   2033.54 	10003   3050.31
-5     10002   2042.02 	10003   3063.02
-6     10002   2050.52 	10003   3075.79
-7     10002   2059.07 	10003   3088.60
-8     10002   2067.65 	10003   3101.47
-9     10002   2076.26 	10003   3114.39
-10     10002   2084.91 	10003   3127.37
-11     10002   2093.60 	10003   3140.40
-12     10002   2102.32 	10003   3153.49
-Final balance of both accounts combined: 5255.81
+## Author
+Joseph Goode — November 6th, 2025
 
-1.	Use two classes, a SavingsAccount class and a SavingsAccountDriver class.
-2.	In the SavingsAccount class, declare a class variable called annualInterestRate, an instance constant called ACCOUNT_NUMBER, and an instance variable called balance. 
-3.	Provide a two-parameter constructor to initialize the instance constant and instance variable, and provide accessors for the instance constant and instance variable. 
-4.	Provide an addMonthlyInterest method to update the balance, by adding (balance * annualInterestRate / 12) to the current balance. Also provide a class method that sets the annual interest rate.
-5.	In the SavingsAccountDriver class, instantiate the saver1 and saver2 objects.
-6.	Set the annual interest rate at 0.05. 
-7.	Print the table heading lines. 
-8.	Use a for loop to print the initial account numbers and balances and the account numbers and balances each month after that month’s interest has been added. 
-9.	After the last month’s printout, compute and display the total of both balances.    
+## Overview
+This project compares the monthly balances of two savings accounts over one year.  
+Each account earns interest based on a shared annual rate (0.05), and the program calculates  
+and displays the balance for each month, followed by the final combined total of both accounts.
+
+## Features
+- Creates two individual `SavingsAccount` objects  
+- Uses a shared static interest rate to simulate aggregation  
+- Prints formatted monthly balances with `printf`  
+- Displays the final combined balance after 12 months  
+
+## Files
+- **SavingsAccount.java** – Handles the setup for each account, including the balance,  
+  account number, and how monthly interest is added.
+- **SavingsAccountDriver.java** – The main program that creates two accounts,  
+  sets the interest rate, and prints the monthly balances and final total.
+
+## How to Run
+1. Compile both files:
+   ```bash
+   javac SavingsAccount.java SavingsAccountDriver.java
+   
+2. Run the driver program:
+    ```bash
+   java SavingsAccountDriver
+
+## Output Example
+```
+Monthly balances for one year with 0.05 annual interest:
+
+Month	Account#	Balance		Account#	Balance
+-----	---------	-------		---------	-------
+0	    10002		2000.00		10003		3000.00
+1	    10002		2008.33		10003		3012.50
+...
+12	    10002		2123.47		10003		3185.21
+
+Final balance of both accounts combined: 5308.68
