@@ -1,3 +1,13 @@
+/******************************************************************
+ * SavingsAccount.java
+ * 
+ * Author: Joseph Goode
+ * Date: November 6th, 2025
+ * 
+ * This class represents a savings account with an account number,
+ * balance, and a shared annual interest rate. It includes methods
+ * to calculate and apply monthly interest to each account balance.
+ ******************************************************************/
 public class SavingsAccount {
     private static double annualInterestRate;
     private final int ACCOUNT_NUMBER;

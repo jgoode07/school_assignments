@@ -1,3 +1,14 @@
+/*********************************************************************
+ * SavingsAccountDriver.java
+ * 
+ * Author: Joseph Goode
+ * Date: November 6th, 2025
+ * 
+ * This class runs the main program for the SavingsAccount comparison.
+ * It creates two account objects, applies an annual interest rate,
+ * and prints out their monthly balances for one year. It also shows
+ * the total combined balance after 12 months.
+ *********************************************************************/
 public class SavingsAccountDriver {
     public static void main(String[] args) {
 
