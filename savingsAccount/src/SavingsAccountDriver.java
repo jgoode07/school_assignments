@@ -17,15 +17,17 @@ public class SavingsAccountDriver {
         for (int month = 0; month <= 12; month++) {
 
             if (month == 0) {
-                System.out.println(month + "\t" + saver1.getAccountNumber() + "\t\t" + saver1.getBalance()
-                        + "\t\t" + saver2.getAccountNumber() + "\t\t" + saver2.getBalance());
+                System.out.printf("%d\t%d\t\t%.2f\t\t%d\t\t%.2f%n",
+                        month, saver1.getAccountNumber(), saver1.getBalance(),
+                        saver2.getAccountNumber(), saver2.getBalance());
             } else {
                 // Add interest only after the first month
                 saver1.addMonthlyInterest();
                 saver2.addMonthlyInterest();
 
-                System.out.println(month + "\t" + saver1.getAccountNumber() + "\t\t" + saver1.getBalance()
-                        + "\t\t" + saver2.getAccountNumber() + "\t\t" + saver2.getBalance());
+                System.out.printf("%d\t%d\t\t%.2f\t\t%d\t\t%.2f%n",
+                        month, saver1.getAccountNumber(), saver1.getBalance(),
+                        saver2.getAccountNumber(), saver2.getBalance());
             }
         }
     }
