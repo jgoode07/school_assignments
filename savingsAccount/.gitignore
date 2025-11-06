@@ -1,0 +1,19 @@
+# Compiled class files
+*.class
+
+# Package Files
+*.jar
+*.war
+*.ear
+
+# Log files
+*.log
+logs/
+
+# Temporary files
+*.tmp
+temp/
+
+# OS-specific files
+.DS_Store # macOS
+Thumbs.db # Windows
