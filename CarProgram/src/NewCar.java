@@ -6,4 +6,15 @@ public class NewCar extends Car {
         super(cost); // calls the Car constructor
         this.color = color;
     }
+
+    // Equals method
+    public boolean equals(NewCar otherCar) {
+        return this.getPrice() == otherCar.getPrice() &&
+                this.color.equalsIgnoreCase(otherCar.color);
+    }
+
+    // Display method
+    public void display() {
+        System.out.printf("price = $%.2f, color = %s%n", getPrice(), color);
+    }
 }

@@ -6,4 +6,15 @@ public class UsedCar extends Car {
         super(cost); // call to Car constructor
         this.mileage = mileage;
     }
+
+    // Equals method
+    public boolean equals(UsedCar otherCar) {
+        return this.getPrice() == otherCar.getPrice() &&
+                this.mileage == otherCar.mileage;
+    }
+
+    // Display method
+    public void display() {
+        System.out.printf("price = $%.2f, mileage = %,d%n", getPrice(), mileage);
+    }
 }
