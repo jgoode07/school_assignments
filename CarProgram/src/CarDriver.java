@@ -1,3 +1,11 @@
+/************************************************************************
+ * CarDriver.java
+ * Author: Joe Goode
+ * 
+ * This program creates NewCar and UsedCar objects, compares them using
+ * equals(), and displays their information if they match. Demonstrates
+ * inheritance and simple object comparisons.
+ ***********************************************************************/
 public class CarDriver {
     public static void main(String[] args) {
         // Create two new cars

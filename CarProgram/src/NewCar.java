@@ -1,3 +1,11 @@
+/************************************************************************
+ * NewCar.java
+ * Author: Joe Goode
+ * 
+ * This class extends Car and adds a colour variable.
+ * It includes a constructor, an equals() method to compare two NewCar
+ * objects, and a display() method that prints the price and colour.
+ ***********************************************************************/
 public class NewCar extends Car {
     private String color;
 

@@ -1,3 +1,11 @@
+/************************************************************************
+ * UsedCar.java
+ * Author: Joe Goode
+ * 
+ * This class extends Car and adds a mileage variable. It includes a
+ * constructor, an equals() method to compare two UsedCar objects, and
+ * a display() method that prints the price and mileage.
+ ***********************************************************************/
 public class UsedCar extends Car {
     private int mileage;
 
