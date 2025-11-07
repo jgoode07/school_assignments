@@ -23,6 +23,6 @@ public class NewCar extends Car {
 
     // Display method
     public void display() {
-        System.out.printf("price = $%.2f, color = %s%n", getPrice(), color);
+        System.out.printf("Price = $%.2f, Colour = %s%n", getPrice(), color);
     }
 }

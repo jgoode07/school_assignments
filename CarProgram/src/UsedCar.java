@@ -23,6 +23,6 @@ public class UsedCar extends Car {
 
     // Display method
     public void display() {
-        System.out.printf("price = $%.2f, mileage = %,d%n", getPrice(), mileage);
+        System.out.printf("Price = $%.2f, Mileage = %,d%n", getPrice(), mileage);
     }
 }
