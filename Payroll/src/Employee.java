@@ -23,4 +23,14 @@ public class Employee {
         birthdayWeek = input.nextInt();
     }
 
+    @Override
+    public String toString() {
+        return String.format(
+                "Employee: %s%n" +
+                        "Social Security Number: %s%n" +
+                        "Paycheck: $%.2f%n",
+                name,
+                socialSecurityNumber,
+                0.00); // Temp placeholder for paycheck
+    }
 }
