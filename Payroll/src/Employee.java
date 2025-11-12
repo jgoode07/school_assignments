@@ -1,4 +1,5 @@
 import java.util.Scanner;
+import java.util.Calendar;
 
 public class Employee {
     // Instance variables
@@ -32,5 +33,10 @@ public class Employee {
                 name,
                 socialSecurityNumber,
                 0.00); // Temp placeholder for paycheck
+    }
+
+    public void getBonus(double paycheck) {
+        // Create a Calendar object to get the current date
+        Calendar currentDate = Calendar.getInstance();
     }
 }
