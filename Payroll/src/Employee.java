@@ -38,5 +38,20 @@ public class Employee {
     public void getBonus(double paycheck) {
         // Create a Calendar object to get the current date
         Calendar currentDate = Calendar.getInstance();
+        int currentMonth = currentDate.get(Calendar.MONTH) + 1;
+        int currentWeek = currentDate.get(Calendar.WEEK_OF_MONTH);
+
+        // If the employee’s birthday matches the current date, add $100
+        if (birthdayMonth == currentMonth && birthdayWeek == currentWeek) {
+            paycheck += 100;
+            System.out.println("Birthday bonus added for " + name + "!");
+        }
+
+        // Return capped paycheck (cannot exceed $1000)
+        if (paycheck > 1000) {
+            paycheck = 1000;
+        }
+
+        System.out.printf("%s's paycheck after bonus check: $%.2f%n", name, paycheck);
     }
 }
