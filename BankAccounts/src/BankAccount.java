@@ -3,6 +3,15 @@ public abstract class BankAccount {
     // Instance variable
     protected double balance;
 
+    // Constructor
+    public BankAccount(double balance) {
+        if (balance < 0) {
+            this.balance = 0;
+        } else {
+            this.balance = balance;
+        }
+    }
+
     // Deposit money into the account
     public void deposit(double amount) {
         if (amount > 0) {
