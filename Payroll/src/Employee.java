@@ -29,11 +29,9 @@ public abstract class Employee {
     public String toString() {
         return String.format(
                 "Employee: %s%n" +
-                        "Social Security Number: %s%n" +
-                        "Paycheck: $%.2f%n",
+                        "Social Security Number: %s%n",
                 name,
-                socialSecurityNumber,
-                0.00); // Temp placeholder for paycheck
+                socialSecurityNumber);
     }
 
     public double getBonus(double paycheck) {
