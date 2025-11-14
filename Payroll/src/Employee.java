@@ -2,6 +2,7 @@ import java.util.Scanner;
 import java.util.Calendar;
 
 public class Employee {
+
     // Instance variables
     protected String name;
     protected String socialSecurityNumber;

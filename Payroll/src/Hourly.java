@@ -6,7 +6,6 @@ public class Hourly extends Employee {
     private double hourlyPay;
     private double hoursWorked;
 
-    // load method
     @Override
     public void load() {
         Scanner input = new Scanner(System.in);
