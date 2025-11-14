@@ -1,3 +1,12 @@
+
+/*******************************************************
+ * Employee.java
+ * Author: Joe Goode
+ *
+ * Base class for all employees. 
+ * Stores personal details and handles birthday bonuses.
+ *******************************************************/
+
 import java.util.Scanner;
 import java.util.Calendar;
 

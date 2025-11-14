@@ -1,3 +1,11 @@
+
+/******************************************************
+ * Payroll.java
+ * Author: Joe Goode
+ *
+ * Main driver for the payroll system.
+ * Collects employee data and prints weekly pay reports.
+ ******************************************************/
 import java.util.Scanner;
 
 public class Payroll {

@@ -1,3 +1,11 @@
+
+/******************************************************
+ * SalariedPlusCommission.java
+ * Author: Joe Goode
+ *
+ * Represents a salaried employee with commission.
+ * Calculates total pay based on salary and sales.
+ ******************************************************/
 import java.util.Scanner;
 
 public class SalariedPlusCommission extends Salaried {

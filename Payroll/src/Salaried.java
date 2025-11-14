@@ -1,3 +1,12 @@
+
+/******************************************************
+ * Salaried.java
+ * Author: Joe Goode
+ *
+ * Represents a salaried employee.
+ * Calculates fixed weekly pay.
+ ******************************************************/
+
 import java.util.Scanner;
 
 public class Salaried extends Employee {

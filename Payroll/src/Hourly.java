@@ -1,3 +1,12 @@
+
+/******************************************************
+ * Hourly.java
+ * Author: Joe Goode
+ *
+ * Represents an hourly employee.
+ * Calculates pay based on hours worked and overtime.
+ ******************************************************/
+
 import java.util.Scanner;
 
 public class Hourly extends Employee {
