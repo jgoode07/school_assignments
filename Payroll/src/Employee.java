@@ -1,7 +1,7 @@
 import java.util.Scanner;
 import java.util.Calendar;
 
-public class Employee {
+public abstract class Employee {
 
     // Instance variables
     protected String name;
@@ -36,7 +36,7 @@ public class Employee {
                 0.00); // Temp placeholder for paycheck
     }
 
-    public void getBonus(double paycheck) {
+    public double getBonus(double paycheck) {
         // Create a Calendar object to get the current date
         Calendar currentDate = Calendar.getInstance();
         int currentMonth = currentDate.get(Calendar.MONTH) + 1;
@@ -53,6 +53,10 @@ public class Employee {
             paycheck = 1000;
         }
 
-        System.out.printf("%s's paycheck after bonus check: $%.2f%n", name, paycheck);
+        return paycheck;
     }
+
+    // Abstract method for subclasses
+    public abstract double getEarnings();
+
 }
