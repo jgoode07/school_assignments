@@ -20,4 +20,26 @@ public class Hourly extends Employee {
         System.out.print("Hours worked this past week ==> ");
         hoursWorked = input.nextDouble();
     }
+
+    public double getEarnings() {
+        double earnings;
+
+        // Calculate normal and overtime pay
+        if (hoursWorked > 40) {
+            double overtimeHours = hoursWorked - 40;
+            earnings = (40 * hourlyPay) + (overtimeHours * hourlyPay * 1.5);
+        } else {
+            earnings = hoursWorked * hourlyPay;
+        }
+
+        // Cap paycheck at $1000
+        if (earnings > 1000) {
+            earnings = 1000;
+        }
+
+        // Add birthday bonus (if applicable)
+        getBonus(earnings);
+
+        return earnings;
+    }
 }
