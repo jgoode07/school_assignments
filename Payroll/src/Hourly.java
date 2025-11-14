@@ -37,7 +37,7 @@ public class Hourly extends Employee {
         }
 
         // Add birthday bonus (if applicable)
-        getBonus(earnings);
+        earnings = getBonus(earnings);
 
         return earnings;
     }

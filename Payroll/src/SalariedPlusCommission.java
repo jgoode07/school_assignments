@@ -22,7 +22,7 @@ public class SalariedPlusCommission extends Salaried {
 
     @Override
     public double getEarnings() {
-        double earnings = (sales * commissionRate) + weeklySalary;
+        double earnings = (sales * commissionRate) + getWeeklySalary();
 
         // Cap paycheck at $1000
         if (earnings > 1000) {
@@ -30,7 +30,7 @@ public class SalariedPlusCommission extends Salaried {
         }
 
         // Add birthday bonus if applicable
-        getBonus(earnings);
+        earnings = getBonus(earnings);
 
         return earnings;
     }

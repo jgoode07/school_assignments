@@ -25,8 +25,13 @@ public class Salaried extends Employee {
         }
 
         // Add birthday bonus (if applicable)
-        getBonus(earnings);
+        earnings = getBonus(earnings);
 
         return earnings;
     }
+
+    public double getWeeklySalary() {
+        return weeklySalary;
+    }
+
 }
