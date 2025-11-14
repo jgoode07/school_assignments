@@ -38,7 +38,7 @@ public abstract class Employee {
     public String toString() {
         return String.format(
                 "Employee: %s%n" +
-                        "Social Security Number: %s%n",
+                        "Social Security Number: %s",
                 name,
                 socialSecurityNumber);
     }
