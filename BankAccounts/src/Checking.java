@@ -1,3 +1,11 @@
+
+/**********************************************************
+ * Checking.java
+ * Author: Joe Goode
+ *
+ * Checking account class. Can write a check, which takes
+ * out the amount plus a $1 fee. Prints the balance.
+ **********************************************************/
 import java.text.NumberFormat;
 
 public class Checking extends BankAccount {

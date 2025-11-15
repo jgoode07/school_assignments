@@ -1,3 +1,11 @@
+
+/**********************************************************
+ * Savings.java
+ * Author: Joe Goode
+ *
+ * Savings account class. Stores an interest rate and can
+ * add interest to the balance. Prints the balance.
+ **********************************************************/
 import java.text.NumberFormat;
 
 public class Savings extends BankAccount {

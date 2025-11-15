@@ -1,3 +1,10 @@
+/**********************************************************
+ * BankAccount.java
+ * Author: Joe Goode
+ *
+ * Base class for all bank accounts. Stores the balance and
+ * handles deposits, withdrawals, and the abstract display.
+ **********************************************************/
 public abstract class BankAccount {
 
     // Instance variable

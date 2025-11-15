@@ -1,3 +1,10 @@
+/**********************************************************
+ * BankAccountDriver.java
+ * Author: Joe Goode
+ *
+ * Tests the Savings and Checking classes using an array
+ * of BankAccount objects and prints their balances.
+ **********************************************************/
 public class BankAccountDriver {
 
     public static void main(String[] args) {
